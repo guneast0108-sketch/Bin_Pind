@@ -1,0 +1,218 @@
+{
+  "_labeler": "Claude(서브에이전트)가 영상 전체 콘택트 시트(3초 간격 480px)만 보고 작성. 파이프라인·OCR 결과를 보기 전 커밋 (2026-09-16). 사전 등록 규칙에 따라 정규화 후 4자 미만 문자열은 우연 일치 위험으로 일괄 제외(문자열이 모두 빠진 장소는 제외). 구간은 choose_clip.py(880초 창, 2초 이상 겹치는 장소 최대) 결과.",
+  "places": [
+    {
+      "place_id": "rainreport",
+      "name": "레인리포트",
+      "texts": [
+        {"text": "RAIN REPORT", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["0:20", "0:25"],
+        ["16:08", "16:19"]
+      ]
+    },
+    {
+      "place_id": "saeseoul",
+      "name": "새서울 (구 호텔 세느장)",
+      "texts": [
+        {"text": "세느장", "source": "sign"},
+        {"text": "SAESEOUL", "source": "sign"},
+        {"text": "Saeseoul Bar", "source": "sign"},
+        {"text": "새서울 바", "source": "sign"},
+        {"text": "Saeseoul Arcade", "source": "sign"},
+        {"text": "새서울 오락실", "source": "sign"},
+        {"text": "SEINE", "source": "sign"},
+        {"text": "새서울", "source": "caption"},
+        {"text": "Saeseoul Bar", "source": "caption"},
+        {"text": "호텔 세느장", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["2:23", "2:28"],
+        ["3:26", "3:43"],
+        ["3:47", "3:49"],
+        ["7:32", "7:34"]
+      ]
+    },
+    {
+      "place_id": "dongbaek",
+      "name": "동백양과점",
+      "texts": [
+        {"text": "동백양과점", "source": "sign"},
+        {"text": "동백양과점", "source": "caption"},
+        {"text": "DongBaek Bakery", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["2:41", "2:43"],
+        ["14:23", "14:31"]
+      ]
+    },
+    {
+      "place_id": "ikseonjabbang",
+      "name": "익선잡방",
+      "texts": [
+        {"text": "익선잡방", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["2:44", "2:46"]
+      ]
+    },
+    {
+      "place_id": "cheongsudang",
+      "name": "청수당 베이커리",
+      "texts": [
+        {"text": "청수당", "source": "caption"},
+        {"text": "청수당 베이커리", "source": "caption"},
+        {"text": "Cheongsudang Bakery", "source": "caption"},
+        {"text": "cheong su dang", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["2:56", "2:58"],
+        ["11:41", "11:43"],
+        ["11:47", "11:58"]
+      ]
+    },
+    {
+      "place_id": "nakwonjang",
+      "name": "낙원장",
+      "texts": [
+        {"text": "낙원장", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["4:17", "4:22"]
+      ]
+    },
+    {
+      "place_id": "gowoondon",
+      "name": "고운돈",
+      "texts": [
+        {"text": "고운돈", "source": "sign"},
+        {"text": "고운돈", "source": "caption"},
+        {"text": "Gowoondon", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["4:23", "4:31"]
+      ]
+    },
+    {
+      "place_id": "jayeondo",
+      "name": "자연도 소금빵",
+      "texts": [
+        {"text": "자연도 소금빵", "source": "caption"},
+        {"text": "자연도가", "source": "caption"},
+        {"text": "Jayeondo Salt Bread", "source": "caption"},
+        {"text": "자연도 소금", "source": "other"},
+        {"text": "자연도 소금빵", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["4:47", "4:52"],
+        ["4:56", "4:58"],
+        ["5:02", "5:07"]
+      ]
+    },
+    {
+      "place_id": "sohasaltpond",
+      "name": "소하염전 익선",
+      "texts": [
+        {"text": "소하염전", "source": "caption"},
+        {"text": "소하염전 익선", "source": "caption"},
+        {"text": "Soha Salt Pond", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["5:29", "5:31"],
+        ["5:35", "5:37"]
+      ]
+    },
+    {
+      "place_id": "tteuran",
+      "name": "뜰안",
+      "texts": [
+        {"text": "뜰안", "source": "sign"},
+        {"text": "뜰안", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["7:14", "7:16"]
+      ]
+    },
+    {
+      "place_id": "oncheonjip",
+      "name": "온천집",
+      "texts": [
+        {"text": "온천집", "source": "caption"},
+        {"text": "Oncheonjip", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["7:35", "7:37"],
+        ["8:05", "8:13"]
+      ]
+    },
+    {
+      "place_id": "songamonban",
+      "name": "송암온반",
+      "texts": [
+        {"text": "송암", "source": "caption"},
+        {"text": "송암온반", "source": "caption"},
+        {"text": "Songam Onban", "source": "caption"},
+        {"text": "송암여관", "source": "caption"},
+        {"text": "송암온반", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["10:32", "10:49"],
+        ["10:56", "10:58"],
+        ["11:38", "11:40"]
+      ]
+    },
+    {
+      "place_id": "flippers",
+      "name": "플리퍼스 익선점",
+      "texts": [
+        {"text": "플리퍼스", "source": "caption"},
+        {"text": "플리퍼스 익선점", "source": "caption"},
+        {"text": "Flipper's Ikseon", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["14:02", "14:07"]
+      ]
+    },
+    {
+      "place_id": "nakwonyeok",
+      "name": "낙원역",
+      "texts": [
+        {"text": "낙원역", "source": "caption"},
+        {"text": "Nakwon", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["16:20", "16:31"],
+        ["16:44", "16:49"]
+      ]
+    },
+    {
+      "place_id": "montblancsom",
+      "name": "몽블랑솜 익선",
+      "texts": [
+        {"text": "몽블랑솜", "source": "caption"},
+        {"text": "몽블랑솜 익선", "source": "sign"},
+        {"text": "Mont Blanc Som Ikseon", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["17:11", "17:25"],
+        ["17:29", "17:37"]
+      ]
+    }
+  ]
+}

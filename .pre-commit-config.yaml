@@ -1,0 +1,54 @@
+# pre-commit hooks
+#
+# 설계: api/js 품질 도구는 isolated env(버전 핀고정) 대신 `repo: local` + system 으로
+#       프로젝트 실제 도구(apps/api/.venv, pnpm)를 그대로 호출 → make verify와 버전 일치.
+#       활성화: `apps/api/.venv/bin/pre-commit install`
+repos:
+  # ── 범용 위생 훅 (pre-commit 자체 env, 버전 안정적) ──────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude: \.(md|woff|ico|png)$
+      - id: trailing-whitespace
+        exclude: \.(md|woff|ico|png)$
+
+  # ── 로컬 도구 호출 (버전 = make verify와 동일) ──────────────────────────────
+  - repo: local
+    hooks:
+      # api: ruff lint(--fix) + format
+      - id: api-ruff
+        name: ruff (api, --fix)
+        entry: apps/api/.venv/bin/ruff check --fix
+        language: system
+        types: [python]
+        files: ^apps/api/.*\.py$
+      - id: api-ruff-format
+        name: ruff-format (api)
+        entry: apps/api/.venv/bin/ruff format
+        language: system
+        types: [python]
+        files: ^apps/api/.*\.py$
+      # api: mypy (프로젝트 전체 컨텍스트 필요 → 파일명 미전달)
+      - id: api-mypy
+        name: mypy (api/app)
+        entry: bash -c 'cd apps/api && .venv/bin/mypy app'
+        language: system
+        files: ^apps/api/app/.*\.py$
+        pass_filenames: false
+      # js: eslint/next lint (web·extension·ui·shared-types)
+      - id: js-lint
+        name: lint (js workspaces)
+        entry: pnpm lint
+        language: system
+        files: \.(ts|tsx|js|jsx|mjs|cjs)$
+        pass_filenames: false
+      # js: tsc typecheck (web·extension·ui·shared-types)
+      - id: js-typecheck
+        name: typecheck (js workspaces)
+        entry: pnpm typecheck
+        language: system
+        files: \.(ts|tsx)$
+        pass_filenames: false

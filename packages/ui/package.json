@@ -1,0 +1,26 @@
+{
+  "name": "@pind/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9.13.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.10.0"
+  }
+}

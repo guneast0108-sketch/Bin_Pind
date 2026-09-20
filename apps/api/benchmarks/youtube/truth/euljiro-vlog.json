@@ -1,0 +1,81 @@
+{
+  "_labeler": "Claude(서브에이전트)가 콘택트 시트(3초 간격 480px 썸네일)만 보고 작성, 파이프라인·OCR 결과를 보기 전 커밋 (2026-09-15). 규칙: benchmarks/youtube/README.md",
+  "places": [
+    {
+      "place_id": "gwanggakdosi",
+      "name": "광각도시",
+      "texts": [
+        {"text": "언더바 광각도시", "source": "sign"},
+        {"text": "9WANG9AKDOSI", "source": "sign"},
+        {"text": "광각도시", "source": "caption"},
+        {"text": "셀프사진관 광각도시", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["1:05", "1:10"],
+        ["1:47", "1:52"],
+        ["2:02", "2:19"],
+        ["2:23", "2:25"]
+      ]
+    },
+    {
+      "place_id": "doutto",
+      "name": "도우또",
+      "texts": [
+        {"text": "도우또", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["2:20", "2:22"]
+      ]
+    },
+    {
+      "place_id": "yonggang",
+      "name": "용강식당",
+      "texts": [
+        {"text": "용강식당", "source": "sign"},
+        {"text": "용강식당", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["2:32", "2:34"],
+        ["2:44", "2:55"],
+        ["3:02", "3:04"],
+        ["3:08", "3:31"],
+        ["3:41", "3:43"],
+        ["4:17", "4:46"],
+        ["4:50", "5:13"],
+        ["5:17", "5:31"],
+        ["5:35", "5:37"],
+        ["5:41", "5:43"]
+      ]
+    },
+    {
+      "place_id": "grandma-cabinet",
+      "name": "그랜마캐비넷",
+      "texts": [
+        {"text": "그랜마캐비넷", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["6:56", "6:58"]
+      ]
+    },
+    {
+      "place_id": "mindthings",
+      "name": "마인띵스",
+      "texts": [
+        {"text": "마인띵스", "source": "caption"},
+        {"text": "마인띵스", "source": "sign"},
+        {"text": "MINDTHINGS", "source": "sign"},
+        {"text": "mindthings", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["11:05", "11:10"],
+        ["11:14", "11:16"],
+        ["13:02", "13:07"]
+      ]
+    }
+  ]
+}

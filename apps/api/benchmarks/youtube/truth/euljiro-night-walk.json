@@ -1,0 +1,174 @@
+{
+  "_labeler": "Claude(서브에이전트)가 콘택트 시트(3초 간격 480px 썸네일)만 보고 작성, 파이프라인·OCR 결과를 보기 전 커밋 (2026-09-15). 규칙: benchmarks/youtube/README.md",
+  "places": [
+    {
+      "place_id": "aedsite",
+      "name": "애드사이트",
+      "texts": [
+        {"text": "애드사이트", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["12:47", "12:58"]
+      ]
+    },
+    {
+      "place_id": "uri-budongsan",
+      "name": "우리부동산",
+      "texts": [
+        {"text": "우리부동산", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["13:11", "13:16"]
+      ]
+    },
+    {
+      "place_id": "samhwa-aluminum",
+      "name": "삼화알미늄",
+      "texts": [
+        {"text": "삼화알미늄", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["14:08", "14:16"]
+      ]
+    },
+    {
+      "place_id": "baeksong-ceramic",
+      "name": "백송세라믹",
+      "texts": [
+        {"text": "백송세라믹", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["15:38", "15:46"]
+      ]
+    },
+    {
+      "place_id": "manseon-hof",
+      "name": "만선호프",
+      "texts": [
+        {"text": "만선호프", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["16:02", "16:07"],
+        ["16:20", "16:31"],
+        ["17:17", "17:22"],
+        ["19:26", "19:40"],
+        ["19:53", "19:58"]
+      ]
+    },
+    {
+      "place_id": "blue-club",
+      "name": "블루클럽",
+      "texts": [
+        {"text": "블루클럽", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["16:14", "16:19"]
+      ]
+    },
+    {
+      "place_id": "honam-power-tools",
+      "name": "호남전동공구부품",
+      "texts": [
+        {"text": "호남전동공구부품", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["17:50", "17:58"]
+      ]
+    },
+    {
+      "place_id": "samgu-sangsa",
+      "name": "삼구상사",
+      "texts": [
+        {"text": "삼구상사", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["18:23", "18:31"]
+      ]
+    },
+    {
+      "place_id": "munchen-hof",
+      "name": "뮌헨호프",
+      "texts": [
+        {"text": "뮌헨호프", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["18:47", "18:55"]
+      ]
+    },
+    {
+      "place_id": "stazhotel",
+      "name": "스타즈호텔",
+      "texts": [
+        {"text": "StazHotel", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["20:26", "20:34"]
+      ]
+    },
+    {
+      "place_id": "cnb",
+      "name": "씨엔비",
+      "texts": [
+        {"text": "씨엔비", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["20:35", "20:43"]
+      ]
+    },
+    {
+      "place_id": "pyeonghwa-lighting",
+      "name": "평화조명",
+      "texts": [
+        {"text": "평화조명", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["20:50", "20:55"]
+      ]
+    },
+    {
+      "place_id": "sangbo-ceramics",
+      "name": "상보세라믹스",
+      "texts": [
+        {"text": "상보세라믹스", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["20:59", "21:07"]
+      ]
+    },
+    {
+      "place_id": "ilseong-ceramic",
+      "name": "일성세라믹",
+      "texts": [
+        {"text": "일성세라믹", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["21:20", "21:31"]
+      ]
+    },
+    {
+      "place_id": "uri-hof",
+      "name": "우리호프",
+      "texts": [
+        {"text": "우리호프", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["21:35", "21:49"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_labeler": "Claude(서브에이전트)가 영상 전체 콘택트 시트(3초 간격 480px)만 보고 작성. 파이프라인·OCR 결과를 보기 전 커밋 (2026-09-16). 사전 등록 규칙에 따라 정규화 후 4자 미만 문자열은 우연 일치 위험으로 일괄 제외(문자열이 모두 빠진 장소는 제외). 구간은 choose_clip.py(880초 창, 2초 이상 겹치는 장소 최대) 결과.",
+  "places": [
+    {
+      "place_id": "pierrot_shopping",
+      "name": "삐에로쇼핑 (두타 B2)",
+      "texts": [
+        {"text": "삐에로쇼핑", "source": "sign"},
+        {"text": "PIERROT SHOPPING", "source": "sign"},
+        {"text": "삐에로 쇼핑", "source": "caption"},
+        {"text": "삐에로쇼핑", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["0:17", "0:19"],
+        ["1:20", "1:31"],
+        ["10:08", "10:13"],
+        ["10:17", "10:19"],
+        ["16:05", "16:07"]
+      ]
+    },
+    {
+      "place_id": "food_camp",
+      "name": "FOOD CAMP (버터 랍스터&쉬림프 푸드트럭)",
+      "texts": [
+        {"text": "FOOD CAMP", "source": "sign"},
+        {"text": "FOOD CAMP", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["6:38", "6:43"]
+      ]
+    },
+    {
+      "place_id": "doota",
+      "name": "두타면세점 (두타몰)",
+      "texts": [
+        {"text": "DOOTA DUTY FREE", "source": "sign"},
+        {"text": "두타", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["9:44", "9:52"]
+      ]
+    },
+    {
+      "place_id": "line_friends",
+      "name": "라인프렌즈 스토어",
+      "texts": [
+        {"text": "LINE FRIENDS", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["9:56", "9:58"]
+      ]
+    }
+  ]
+}

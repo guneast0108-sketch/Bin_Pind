@@ -1,0 +1,17 @@
+{
+  "name": "@pind/shared-types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "generate": "openapi-typescript ../../apps/api/openapi.json -o src/api.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.4.0",
+    "typescript": "^5.5.4"
+  }
+}

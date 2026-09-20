@@ -1,0 +1,95 @@
+[project]
+name = "pind-api"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    # Web framework
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.0",
+    # Database
+    "sqlalchemy>=2.0.30",
+    "alembic>=1.13.1",
+    "geoalchemy2>=0.15.0",
+    "asyncpg>=0.29.0",
+    "psycopg2-binary>=2.9.9",
+    # Validation / settings
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    # AI pipeline
+    "google-genai>=0.7.0",
+    "faster-whisper>=1.0.3",
+    "yt-dlp>=2024.5.1",
+    "sentence-transformers>=3.0.0",
+    "tenacity>=8.3.0",
+    # Vision frontend (pipeline/vision) — 프레임 화질 지표·미니 ISP·장면 dedup
+    # headless 빌드: 서버에 GUI 의존성(libGL 등)을 끌어오지 않는다.
+    # <5: opencv 5.0 에서 MSER 이 간판 영역을 검출하지 못함 (textness 테스트 실패 확인)
+    "opencv-python-headless>=4.10.0,<5",
+    "numpy>=1.26",
+    # Logging
+    "structlog>=24.2.0",
+    # HTTP client
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+# 장면 dedup에 DINOv3 임베딩을 쓸 때만 필요. 없으면 pHash+HSV 임베더로 자동 폴백한다.
+# AutoImageProcessor 가 pillow·torchvision 을 요구한다. 모델은 HF gated repo → HF_TOKEN 필요.
+vision-embed = [
+    "torch>=2.3.0",
+    "torchvision>=0.18.0",
+    "transformers>=4.44.0",
+    "pillow>=10.0.0",
+]
+# 프레임 선별의 학습된 문자 검출기 (selection_strategy="text_nms"). 모델은
+# `python -m app.pipeline.vision.textdet --fetch` 로 PyPI 휠에서 꺼내 캐시한다.
+vision-textdet = [
+    "onnxruntime>=1.17.0",
+]
+# 장소 보존률 검증의 장면 문자 판정자 (benchmarks/validate_recall.py --judge easyocr)
+bench = [
+    "easyocr>=1.7.1",
+]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.6",
+    "pytest-cov>=5.0.0",
+    "respx>=0.21.0",
+    "ruff>=0.4.5",
+    "mypy>=1.10.0",
+    "pre-commit>=3.7.1",
+    "types-psycopg2",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["app", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP", "N", "ANN"]
+ignore = [
+    "ANN401",  # Any 허용 (파이프라인 타입에서 필요)
+    "N818",    # 도메인 예외는 Error suffix 없이 사용 (VideoNotFound, PlaceNotFound 등)
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "live: tests that call real external APIs (deselect with -m 'not live')",
+    "integration: tests requiring Docker DB",
+]
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["app/main.py"]

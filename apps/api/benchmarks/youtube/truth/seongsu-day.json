@@ -1,0 +1,86 @@
+{
+  "_labeler": "Claude(서브에이전트)가 콘택트 시트(3초 간격 480px 썸네일)만 보고 작성, 파이프라인·OCR 결과를 보기 전 커밋 (2026-09-15). 규칙: benchmarks/youtube/README.md",
+  "places": [
+    {
+      "place_id": "perment",
+      "name": "퍼멘트 베이크샵",
+      "texts": [
+        {"text": "PERMENT BAKE SHOP", "source": "sign"},
+        {"text": "Perment BAKESHOP", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["8:11", "8:16"],
+        ["8:26", "8:28"]
+      ]
+    },
+    {
+      "place_id": "ostkaka",
+      "name": "오스트카카",
+      "texts": [
+        {"text": "OSTKAKA", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["8:35", "8:40"]
+      ]
+    },
+    {
+      "place_id": "unfomo",
+      "name": "언포모",
+      "texts": [
+        {"text": "언포모", "source": "caption"},
+        {"text": "Unfomo", "source": "caption"},
+        {"text": "UNFOMO", "source": "sign"},
+        {"text": "UnFoMO", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["8:53", "8:55"],
+        ["9:14", "9:22"],
+        ["9:38", "9:40"]
+      ]
+    },
+    {
+      "place_id": "poset",
+      "name": "포셋 성수",
+      "texts": [
+        {"text": "포셋 성수", "source": "caption"},
+        {"text": "Poset Seongsu", "source": "caption"},
+        {"text": "poset", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["10:41", "10:46"]
+      ]
+    },
+    {
+      "place_id": "gentlemonster",
+      "name": "젠틀몬스터 하우스 노웨어 서울",
+      "texts": [
+        {"text": "젠틀몬스터 하우스 노웨어", "source": "caption"},
+        {"text": "GENTLE MONSTER HAUS NOWHERE", "source": "caption"},
+        {"text": "gentle monster", "source": "other"},
+        {"text": "GENTLE MONSTER", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["11:38", "11:43"],
+        ["11:53", "11:58"],
+        ["12:05", "12:10"]
+      ]
+    },
+    {
+      "place_id": "geumgeum",
+      "name": "금금 성수",
+      "texts": [
+        {"text": "금금", "source": "caption"},
+        {"text": "Geumgeum", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["13:20", "13:22"]
+      ]
+    }
+  ]
+}

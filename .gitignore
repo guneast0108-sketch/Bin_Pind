@@ -1,0 +1,42 @@
+## Node
+node_modules/
+.pnpm-store/
+
+## Build outputs
+dist/
+.next/
+.plasmo/
+build/
+out/
+
+## Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+
+## Generated
+# NOTE: packages/shared-types/src/api.ts 는 추적함 (gitignore 안 함).
+#   - 클론 직후에도 web/extension/shared-types가 typecheck 되도록 생성 산출물을 커밋.
+#   - `make gen-types`(openapi-typescript)가 덮어쓴다. 손으로 수정 금지.
+
+## Env
+.env
+.env.local
+.env.*.local
+
+## Editor
+.DS_Store
+.idea/
+.vscode/settings.json
+
+## Supabase local
+supabase/.temp/
+
+## bkit (로컬 플러그인 상태 — 커밋하지 않음)
+.bkit/

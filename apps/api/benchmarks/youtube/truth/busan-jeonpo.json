@@ -1,0 +1,288 @@
+{
+  "_labeler": "Claude(서브에이전트)가 영상 전체 콘택트 시트(3초 간격 480px)만 보고 작성. 파이프라인·OCR 결과를 보기 전 커밋 (2026-09-16). 사전 등록 규칙에 따라 정규화 후 4자 미만 문자열은 우연 일치 위험으로 일괄 제외(문자열이 모두 빠진 장소는 제외). 구간은 choose_clip.py(880초 창, 2초 이상 겹치는 장소 최대) 결과.",
+  "places": [
+    {
+      "place_id": "bongga_milmyeon",
+      "name": "본가밀면",
+      "texts": [
+        {"text": "본가밀면전문점", "source": "sign"},
+        {"text": "본가밀면", "source": "sign"},
+        {"text": "본가밀면", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["0:32", "0:34"],
+        ["1:14", "1:22"],
+        ["1:26", "1:28"],
+        ["1:53", "2:43"]
+      ]
+    },
+    {
+      "place_id": "oliveyoung",
+      "name": "올리브영",
+      "texts": [
+        {"text": "OLIVE YOUNG", "source": "sign"},
+        {"text": "올리브영", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["1:11", "1:13"]
+      ]
+    },
+    {
+      "place_id": "origin",
+      "name": "오리진 플라워샵",
+      "texts": [
+        {"text": "ORIGIN", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["4:02", "4:07"]
+      ]
+    },
+    {
+      "place_id": "bracket_table",
+      "name": "브라켓테이블",
+      "texts": [
+        {"text": "BRACKET TABLE", "source": "sign"},
+        {"text": "브라켓테이블", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["4:08", "4:13"]
+      ]
+    },
+    {
+      "place_id": "resov",
+      "name": "레소브 빈티지",
+      "texts": [
+        {"text": "resov", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["6:14", "6:22"]
+      ]
+    },
+    {
+      "place_id": "lowdown",
+      "name": "로우다운 빈티지",
+      "texts": [
+        {"text": "LOWDOWN", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["6:32", "6:34"]
+      ]
+    },
+    {
+      "place_id": "laundry_club",
+      "name": "런드리클럽",
+      "texts": [
+        {"text": "LAUNDRY CLUB", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["7:02", "7:04"]
+      ]
+    },
+    {
+      "place_id": "newport",
+      "name": "뉴포트 카페",
+      "texts": [
+        {"text": "NEWPORT", "source": "sign"},
+        {"text": "뉴포트", "source": "caption"},
+        {"text": "NEWPORT COFFEE", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["9:17", "9:19"],
+        ["9:26", "9:31"],
+        ["9:53", "9:55"]
+      ]
+    },
+    {
+      "place_id": "dongkyung_bapsang",
+      "name": "동경밥상",
+      "texts": [
+        {"text": "동경밥상", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["10:29", "10:37"]
+      ]
+    },
+    {
+      "place_id": "chohissatsu",
+      "name": "쵸힛사츠",
+      "texts": [
+        {"text": "쵸-힛사츠", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["12:47", "12:49"]
+      ]
+    },
+    {
+      "place_id": "butterball",
+      "name": "버터볼이터리",
+      "texts": [
+        {"text": "BUTTERBALL EATERY", "source": "sign"},
+        {"text": "BUTTERBALL EATERY", "source": "other"},
+        {"text": "BUTTERBALL", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["13:41", "13:49"],
+        ["14:05", "14:10"],
+        ["14:23", "14:25"]
+      ]
+    },
+    {
+      "place_id": "millac_market",
+      "name": "밀락더마켓",
+      "texts": [
+        {"text": "밀락더마켓", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["15:11", "15:13"]
+      ]
+    },
+    {
+      "place_id": "podo",
+      "name": "포도 와인샵",
+      "texts": [
+        {"text": "PODO", "source": "caption"},
+        {"text": "PODO", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["15:29", "15:34"]
+      ]
+    },
+    {
+      "place_id": "portana",
+      "name": "포르타나 피자",
+      "texts": [
+        {"text": "PORTANA", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["15:35", "15:37"],
+        ["15:41", "15:58"],
+        ["16:02", "16:04"],
+        ["16:14", "16:16"]
+      ]
+    },
+    {
+      "place_id": "hapcheon_gukbap",
+      "name": "합천일류돼지국밥",
+      "texts": [
+        {"text": "합천", "source": "sign"},
+        {"text": "합천일류돼지국밥", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["17:32", "17:37"]
+      ]
+    },
+    {
+      "place_id": "lowandsweet",
+      "name": "로우앤스윗",
+      "texts": [
+        {"text": "로우앤스윗", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["18:50", "18:52"]
+      ]
+    },
+    {
+      "place_id": "gogo_tacos",
+      "name": "고고타코스",
+      "texts": [
+        {"text": "GOGO TACOS", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["18:53", "18:55"],
+        ["24:11", "24:13"]
+      ]
+    },
+    {
+      "place_id": "orleans_store",
+      "name": "오를리언스 스토어",
+      "texts": [
+        {"text": "orleans store", "source": "sign"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["19:41", "19:49"],
+        ["19:53", "19:55"]
+      ]
+    },
+    {
+      "place_id": "potshop",
+      "name": "팟샵",
+      "texts": [
+        {"text": "PotShop", "source": "sign"},
+        {"text": "POTSHOP", "source": "other"},
+        {"text": "팟샵", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["21:05", "21:07"],
+        ["21:11", "21:16"]
+      ]
+    },
+    {
+      "place_id": "luft_mansion",
+      "name": "루프트맨션",
+      "texts": [
+        {"text": "Luft Mansion", "source": "sign"},
+        {"text": "루프트맨션", "source": "caption"},
+        {"text": "Mansion", "source": "other"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["21:08", "21:10"],
+        ["21:17", "21:25"],
+        ["21:32", "21:37"]
+      ]
+    },
+    {
+      "place_id": "fiftyfifty",
+      "name": "피프티피프티",
+      "texts": [
+        {"text": "50/50", "source": "sign"},
+        {"text": "피프티피프티", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["21:53", "21:58"]
+      ]
+    },
+    {
+      "place_id": "sangguki",
+      "name": "상국이네",
+      "texts": [
+        {"text": "상국이네", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["22:14", "22:19"]
+      ]
+    },
+    {
+      "place_id": "brownhands",
+      "name": "브라운핸즈 백제",
+      "texts": [
+        {"text": "브라운핸즈", "source": "caption"}
+      ],
+      "dark": "auto",
+      "segments": [
+        ["22:59", "23:01"]
+      ]
+    }
+  ]
+}

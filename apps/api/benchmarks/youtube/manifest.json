@@ -1,0 +1,78 @@
+{
+  "_how_to": "영상 파일은 커밋하지 않는다(.cache/). URL·포맷·구간·정답만 커밋한다. 자세한 규칙은 README.md",
+  "defaults": {
+    "format": "bv*[height<=720][vcodec^=avc1]/bv*[height<=720]",
+    "ocr_lang": "kor+eng",
+    "judge": "easyocr"
+  },
+  "videos": [
+    {
+      "key": "euljiro-night-walk",
+      "url": "https://www.youtube.com/watch?v=yArKEcqEYgk",
+      "role": "야간 연속 걷기(짐벌) · 한글 가로/세로 간판 밀집 · 편집 자막 없음. 클립 12:00–22:00 = 셔터 내린 어두운 인도(12:12–13:30) + 노가리골목 + 세라믹·조명 상가. 주의: 가로등·네온이 많아 대부분 노출이 충분함 — 진짜 저조도 시험으로는 약함",
+      "clip": [
+        "12:00",
+        "22:00"
+      ],
+      "truth": "truth/euljiro-night-walk.json",
+      "split": "dev"
+    },
+    {
+      "key": "euljiro-vlog",
+      "url": "https://www.youtube.com/watch?v=RkhW3kAMP2E",
+      "role": "편집 브이로그 · 컷 편집 · 상호 타이틀 카드/자막 · 실내 식당/소품샵(광각도시·도우또·용강식당·그랜마캐비넷·마인띵스). 전체 14:42(884장, 디코딩 상한 900 이내) → Pind 실제 입력에 가장 가까움, 자막 vs 간판 분리",
+      "clip": null,
+      "truth": "truth/euljiro-vlog.json",
+      "split": "dev"
+    },
+    {
+      "key": "seongsu-day",
+      "url": "https://www.youtube.com/watch?v=CqjUMq6BbDA",
+      "role": "주간 정상 노출 대조군 · 클립 8:10–14:42 성수동 파트(퍼멘트·오스트카카·언포모·포셋·젠틀몬스터 하우스 노웨어·금금) · 챕터마다 한글+로마자 자막",
+      "clip": [
+        "8:10",
+        "14:42"
+      ],
+      "truth": "truth/seongsu-day.json",
+      "split": "dev"
+    },
+    {
+      "key": "ikseon-hanok",
+      "split": "test",
+      "url": "https://www.youtube.com/watch?v=nBok5fvA4-I",
+      "role": "테스트 · 편집 브이로그 · 서울 익선동 한옥 골목 맛집·카페 11곳",
+      "clip": [
+        "2:33",
+        "17:13"
+      ],
+      "truth": "truth/ikseon-hanok.json"
+    },
+    {
+      "key": "busan-jeonpo",
+      "split": "test",
+      "url": "https://www.youtube.com/watch?v=ep5xKczmtIA",
+      "role": "테스트 · 편집 브이로그 · 부산 전포·광안리·해운대 (다른 도시)",
+      "clip": [
+        "8:21",
+        "23:01"
+      ],
+      "truth": "truth/busan-jeonpo.json"
+    },
+    {
+      "key": "dongdaemun-night",
+      "split": "test",
+      "url": "https://www.youtube.com/watch?v=oNkl2gZjbH4",
+      "role": "테스트 · 야간·실내 · 동대문 야시장 + 대형 매장",
+      "clip": [
+        "0:00",
+        "14:40"
+      ],
+      "truth": "truth/dongdaemun-night.json"
+    }
+  ],
+  "_test_alternates": {
+    "ikseon-hanok": "https://www.youtube.com/watch?v=aDIIWNHoNUY",
+    "busan-jeonpo": "https://www.youtube.com/watch?v=JnPyFFbFdo8",
+    "dongdaemun-night": "https://www.youtube.com/watch?v=fUKOVrvxE9g"
+  }
+}
